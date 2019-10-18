@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-Note-4" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="50" name="Samsung-Galaxy-Note-4" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5"/>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-4Rule1N910_copy"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_SM-N910V_OR_IP_User-Agent_CONTAINS_SM-N910P_OR_IP_User-Agent_CONTAINS_SM-N910V_OR_IP_User-Agent_CONTAINS_SM-N910T_OR_IP_User-Agent_CONTAINS_SM-N910A" expression="(((Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Checkcd2567b4-9184-4ecf-a7c5-bd28aa2998f8 | Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Check565f454e-4983-426b-aded-bb3848f92ab2) | Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Checkb034a990-61d5-4a66-83d7-59980dc232c9) | Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Check2e64ac8e-ddef-4864-b938-8eff0fb568bf) | Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Check37d3c6b4-841e-4535-aa7c-9f9885e1b33c" name="Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_SM-N910V_OR_ACIDEX_device-type_CONTAINS_SM-N910P_OR_ACIDEX_device-type_CONTAINS_SM-N910T_OR_ACIDEX_device-type_CONTAINS_SM-N910A" expression="((Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5Checkfcbc807a-9a91-4bb4-8a06-fe6587570799 | Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5Check93fffda8-01fb-4a9a-aeb4-95ea371df163) | Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5Check22224b82-2430-4d06-a6f5-ce99ad4e225c) | Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5Checkd94a994a-a010-4eb4-9ec6-c0e173971747" name="Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-4-N910-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-4-N910-Rule1-Check1_copy" name="Android-Samsung-Galaxy-Note-4Rule1N910_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_SM-N910V_OR_DHCP_host-name_CONTAINS_SM-N910P_OR_DHCP_host-name_CONTAINS_SM-N910T_OR_DHCP_host-name_CONTAINS_SM-N910A_OR_DHCP_host-name_CONTAINS_Note-4_OR_DHCP_host-name_CONTAINS_Note4" expression="((((Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Check5852ead1-6c4d-44e5-b417-b17702748a51 | Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Checkc769f628-07bc-4054-819c-d43f3b76ea3a) | Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Check5a8b9667-f1f2-4d37-af6b-504710125323) | Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Checkb05c4a4c-3a6f-49bd-8498-c08f374abbcd) | Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Checkb2906237-3f72-4b4f-afaf-e97d41bd87de) | Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Checkc6482b9d-df67-49be-8e7e-41a4a73993d3" name="Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N910V" description="IP User-Agent CONTAINS SM-N910V" name="Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Checkcd2567b4-9184-4ecf-a7c5-bd28aa2998f8" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N910P" description="IP User-Agent CONTAINS SM-N910P" name="Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Check565f454e-4983-426b-aded-bb3848f92ab2" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N910V" description="IP User-Agent CONTAINS SM-N910V" name="Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Checkb034a990-61d5-4a66-83d7-59980dc232c9" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N910T" description="IP User-Agent CONTAINS SM-N910T" name="Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Check2e64ac8e-ddef-4864-b938-8eff0fb568bf" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N910A" description="IP User-Agent CONTAINS SM-N910A" name="Samsung-Galaxy-Note-4Rulef32a88dc-d301-4156-b775-bf376251ad82Check37d3c6b4-841e-4535-aa7c-9f9885e1b33c" operator="Contains" type="IP"/>
+<Check attributeName="device-type" attributeValue="SM-N910V" description="ACIDEX device-type CONTAINS SM-N910V" name="Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5Checkfcbc807a-9a91-4bb4-8a06-fe6587570799" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-N910P" description="ACIDEX device-type CONTAINS SM-N910P" name="Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5Check93fffda8-01fb-4a9a-aeb4-95ea371df163" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-N910T" description="ACIDEX device-type CONTAINS SM-N910T" name="Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5Check22224b82-2430-4d06-a6f5-ce99ad4e225c" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-N910A" description="ACIDEX device-type CONTAINS SM-N910A" name="Samsung-Galaxy-Note-4Rule73aacdbf-95a8-4e73-a3fe-5b6c741447f5Checkd94a994a-a010-4eb4-9ec6-c0e173971747" operator="Contains" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="N910" description="Condition for Android-Samsung-Galaxy-Note-4-N910, based on IP:User-Agent" name="Android-Samsung-Galaxy-Note-4-N910-Rule1-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="SM-N910V" description="DHCP host-name CONTAINS SM-N910V" name="Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Check5852ead1-6c4d-44e5-b417-b17702748a51" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-N910P" description="DHCP host-name CONTAINS SM-N910P" name="Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Checkc769f628-07bc-4054-819c-d43f3b76ea3a" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-N910T" description="DHCP host-name CONTAINS SM-N910T" name="Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Check5a8b9667-f1f2-4d37-af6b-504710125323" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-N910A" description="DHCP host-name CONTAINS SM-N910A" name="Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Checkb05c4a4c-3a6f-49bd-8498-c08f374abbcd" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Note-4" description="DHCP host-name CONTAINS Note-4" name="Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Checkb2906237-3f72-4b4f-afaf-e97d41bd87de" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Note4" description="DHCP host-name CONTAINS Note4" name="Samsung-Galaxy-Note-4Ruled90c1879-55df-4d25-8b2f-aee9421cdf27Checkc6482b9d-df67-49be-8e7e-41a4a73993d3" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

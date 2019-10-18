@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Samsung-Galaxy-Tab-S2" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3_copy0_copy"/>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389_copy0_copy"/>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1_copy0_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_SM-T710_OR_ACIDEX_device-type_CONTAINS_SM-T813_OR_ACIDEX_device-type_CONTAINS_SM-T713_OR_ACIDEX_device-type_CONTAINS_SM-T810" expression="((Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3Checkb1a97ea8-6d17-4f70-af78-2c2bcbe6c807_copy_copy | Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3Checkce8d599e-e45f-40f8-bb30-ea4120f7a28e_copy_copy) | Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3_copy0_copyCheck79d696a3-b505-4d4c-a68c-af23edb91f5c) | Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3_copy0_copyChecka6cf21e3-608f-4813-a5ee-5155281fb48e" name="Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3_copy0_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Galaxy-Tab-S2_OR_DHCP_host-name_CONTAINS_SM-T710_OR_DHCP_host-name_CONTAINS_SM-T813_OR_DHCP_host-name_CONTAINS_SM-T713_OR_DHCP_host-name_CONTAINS_SM-T810" expression="(((Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389Check73b67b07-928d-45e4-9728-bc66fe853af9_copy0_copy | Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389Checkc184b06e-6cee-4594-b2c8-7a55c1938bf8_copy0_copy) | Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389Check44014ce6-9516-4539-bb46-39849cc8e617_copy_copy) | Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389_copy0_copyCheckd6291216-31f8-46d1-b6fd-76c7756d1567) | Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389_copy0_copyCheck7b530cab-4b0b-457d-9190-5ab37e9f553a" name="Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389_copy0_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_SM-T710_OR_IP_User-Agent_CONTAINS_SM-T813_OR_IP_User-Agent_CONTAINS_SM-T713_OR_IP_User-Agent_CONTAINS_SM-T810" expression="((Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1Check5065107c-4b3c-4568-8a87-8d678c1d0e20_copy0_copy | Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1Check0e220e2d-3f04-4d51-8602-5452861184a1_copy_copy) | Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1_copy0_copyCheck712ca9cc-e65a-42d2-ade2-d04d8d1a3eb4) | Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1_copy0_copyCheck63ee49e8-8819-4176-ae94-3c11da863074" name="Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1_copy0_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="device-type" attributeValue="SM-T710" description="ACIDEX device-type CONTAINS SM-T710" name="Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3Checkb1a97ea8-6d17-4f70-af78-2c2bcbe6c807_copy_copy" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-T813" description="ACIDEX device-type CONTAINS SM-T813" name="Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3Checkce8d599e-e45f-40f8-bb30-ea4120f7a28e_copy_copy" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-T713" description="ACIDEX device-type CONTAINS SM-T713" name="Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3_copy0_copyCheck79d696a3-b505-4d4c-a68c-af23edb91f5c" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-T810" description="ACIDEX device-type CONTAINS SM-T810" name="Samsung-Galaxy-Tab-ARule4075b20a-9567-48e0-8d0e-c620832ae1d3_copy0_copyChecka6cf21e3-608f-4813-a5ee-5155281fb48e" operator="Contains" type="ACIDEX"/>
+<Check attributeName="host-name" attributeValue="Galaxy-Tab-S2" description="DHCP host-name CONTAINS Galaxy-Tab-S2" name="Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389Check73b67b07-928d-45e4-9728-bc66fe853af9_copy0_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-T710" description="DHCP host-name CONTAINS SM-T710" name="Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389Checkc184b06e-6cee-4594-b2c8-7a55c1938bf8_copy0_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-T813" description="DHCP host-name CONTAINS SM-T813" name="Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389Check44014ce6-9516-4539-bb46-39849cc8e617_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-T713" description="DHCP host-name CONTAINS SM-T713" name="Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389_copy0_copyCheckd6291216-31f8-46d1-b6fd-76c7756d1567" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-T810" description="DHCP host-name CONTAINS SM-T810" name="Samsung-Galaxy-Tab-ARule4519b172-0120-4da7-b97d-f717fbfcf389_copy0_copyCheck7b530cab-4b0b-457d-9190-5ab37e9f553a" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="SM-T710" description="IP User-Agent CONTAINS SM-T710" name="Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1Check5065107c-4b3c-4568-8a87-8d678c1d0e20_copy0_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-T813" description="IP User-Agent CONTAINS SM-T813" name="Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1Check0e220e2d-3f04-4d51-8602-5452861184a1_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-T713" description="IP User-Agent CONTAINS SM-T713" name="Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1_copy0_copyCheck712ca9cc-e65a-42d2-ade2-d04d8d1a3eb4" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-T810" description="IP User-Agent CONTAINS SM-T810" name="Samsung-Galaxy-Tab-ARuled1309577-24b6-45d6-b821-b5badca480b1_copy0_copyCheck63ee49e8-8819-4176-ae94-3c11da863074" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

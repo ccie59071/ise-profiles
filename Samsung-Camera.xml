@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Samsung-Camera" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Samsung-CameraRule9f9edf3f-705f-4241-b5df-fcfcbecaf55a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_Samsung-Camera" expression="Samsung-CameraRule9f9edf3f-705f-4241-b5df-fcfcbecaf55aCheck53f4304d-1ca1-4fd5-9da7-5fa268e3ddac" name="Samsung-CameraRule9f9edf3f-705f-4241-b5df-fcfcbecaf55a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="sysDescr" attributeValue="Samsung-Camera" description="SNMP sysDescr CONTAINS Samsung-Camera" name="Samsung-CameraRule9f9edf3f-705f-4241-b5df-fcfcbecaf55aCheck53f4304d-1ca1-4fd5-9da7-5fa268e3ddac" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

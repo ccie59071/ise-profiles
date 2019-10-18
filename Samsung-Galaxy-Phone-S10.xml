@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-Phone-S10" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="50" name="Samsung-Galaxy-Phone-S10" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003_copy"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9c_copy"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_SM-G975U_OR_ACIDEX_device-type_CONTAINS_SM-G973U_OR_ACIDEX_device-type_CONTAINS_SM-G975U1_OR_ACIDEX_device-type_CONTAINS_SM-G970U" expression="((Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003Check275764b4-c113-4e3c-8718-e4a416974312_copy | Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003Check37728a6a-1264-4ff9-86cd-a7929a917c91_copy) | Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003Check56a70941-51dc-4dc5-91b0-a895f3508ce3_copy) | Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003Check62f209c9-d531-47d3-8d43-34b6e8961db5_copy" name="Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Galaxy-S10_OR_DHCP_host-name_CONTAINS_S10_OR_DHCP_host-name_CONTAINS_SM-G975U_OR_DHCP_host-name_CONTAINS_SM-G973U_OR_DHCP_host-name_CONTAINS_SM-G975U1_OR_DHCP_host-name_CONTAINS_SM-G970U" expression="((((Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheck70739991-7414-4e45-907b-fe8f9d7d7a6e_copy | Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheckad8ba463-6588-4ce6-8973-ef2628c193a1_copy) | Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheck83223adb-55cf-4f18-88b5-3c124cd7f81f_copy) | Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cChecka55599dd-fdda-4594-baf2-8ff98b80c065_copy) | Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheckbec7d9ec-63dc-4220-a212-e9d9c151b6e7_copy) | Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheckf1e44595-f866-4c86-9c59-21df558830eb_copy" name="Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9c_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_SM-G975U_OR_IP_User-Agent_CONTAINS_SM-G973U_OR_IP_User-Agent_CONTAINS_SM-G975U1_OR_IP_User-Agent_CONTAINS_SM-G970U" expression="((Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53Checke91508b0-5d61-4937-90d3-bd310bc8798c | Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53Check54b48200-938d-4f0c-b362-559261897534) | Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53Check7c28b616-4e19-4d06-a01a-0497899d1fdb) | Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53Check9aae8ab9-0344-4fce-875e-bc64e09f8335" name="Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="device-type" attributeValue="SM-G975U" description="ACIDEX device-type CONTAINS SM-G975U" name="Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003Check275764b4-c113-4e3c-8718-e4a416974312_copy" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-G973U" description="ACIDEX device-type CONTAINS SM-G973U" name="Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003Check37728a6a-1264-4ff9-86cd-a7929a917c91_copy" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-G975U1" description="ACIDEX device-type CONTAINS SM-G975U1" name="Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003Check56a70941-51dc-4dc5-91b0-a895f3508ce3_copy" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-G970U" description="ACIDEX device-type CONTAINS SM-G970U" name="Samsung-Galaxy-Phone-S9Rule074bbf15-c505-4af8-8576-9d9312830003Check62f209c9-d531-47d3-8d43-34b6e8961db5_copy" operator="Contains" type="ACIDEX"/>
+<Check attributeName="host-name" attributeValue="Galaxy-S10" description="DHCP host-name CONTAINS Galaxy-S10" name="Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheck70739991-7414-4e45-907b-fe8f9d7d7a6e_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="S10" description="DHCP host-name CONTAINS S10" name="Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheckad8ba463-6588-4ce6-8973-ef2628c193a1_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-G975U" description="DHCP host-name CONTAINS SM-G975U" name="Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheck83223adb-55cf-4f18-88b5-3c124cd7f81f_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-G973U" description="DHCP host-name CONTAINS SM-G973U" name="Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cChecka55599dd-fdda-4594-baf2-8ff98b80c065_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-G975U1" description="DHCP host-name CONTAINS SM-G975U1" name="Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheckbec7d9ec-63dc-4220-a212-e9d9c151b6e7_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-G970U" description="DHCP host-name CONTAINS SM-G970U" name="Samsung-Galaxy-Phone-S9Ruleecd42f64-9fa3-44bb-bf32-2a1a54649c9cCheckf1e44595-f866-4c86-9c59-21df558830eb_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="SM-G975U" description="IP User-Agent CONTAINS SM-G975U" name="Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53Checke91508b0-5d61-4937-90d3-bd310bc8798c" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-G973U" description="IP User-Agent CONTAINS SM-G973U" name="Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53Check54b48200-938d-4f0c-b362-559261897534" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-G975U1" description="IP User-Agent CONTAINS SM-G975U1" name="Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53Check7c28b616-4e19-4d06-a01a-0497899d1fdb" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-G970U" description="IP User-Agent CONTAINS SM-G970U" name="Samsung-Galaxy-Phone-S10Ruleee98f524-2a10-438b-957e-b2d28bdc1e53Check9aae8ab9-0344-4fce-875e-bc64e09f8335" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

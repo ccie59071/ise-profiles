@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-J3" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="Samsung-Galaxy-J3" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162"/>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1"/>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_SM-J327T1_OR_ACIDEX_device-type_CONTAINS_SM-J327T_OR_ACIDEX_device-type_CONTAINS_SM-J320A_OR_ACIDEX_device-type_CONTAINS_SM-J320V_OR_ACIDEX_device-type_CONTAINS_SM-J327V_OR_ACIDEX_device-type_CONTAINS_SM-J320V_OR_ACIDEX_device-type_CONTAINS_SM-S327VL_OR_ACIDEX_device-type_CONTAINS_SM-J320P" expression="((((((Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Checkb91124bb-5f40-4450-bd9f-5ca4ad18874c | Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check2ca9e861-9214-494f-bb7d-4b92ee14ce9f) | Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check9ec016fb-8bde-4d98-9589-7725eaab9be1) | Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check68b37e41-71ec-48fe-be57-97dcf4f7109a) | Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check2397f582-bb22-4893-8d7a-c7a2ee315fdb) | Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Checkaa8839a6-060d-4246-861f-db620c7f5666) | Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check362f5c47-ef91-47ce-9ad1-899ba4231756) | Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check56856d2f-feeb-499a-a315-3c96b91515ff" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_SM-J327T1_OR_IP_User-Agent_CONTAINS_SM-J327T_OR_IP_User-Agent_CONTAINS_SM-J320A_OR_IP_User-Agent_CONTAINS_SM-J320V_OR_IP_User-Agent_CONTAINS_SM-J327V_OR_IP_User-Agent_CONTAINS_SM-J320V_OR_IP_User-Agent_CONTAINS_SM-S327VL_OR_IP_User-Agent_CONTAINS_SM-J320P" expression="((((((Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169Check2c1661fd-5393-4481-b151-ed20c815399c_copy1 | Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Checkf429ee6d-6266-48f0-a4ec-d4ed492cfd32) | Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Check348db772-ceb7-4c5a-9326-06b622f739d7) | Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Checkd8de3af5-9859-4980-9da3-bfb03cc994e9) | Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Checkc638dfdd-3413-446c-9f35-907db4263055) | Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Check8eb3b899-f4ca-4eb0-931d-ef09731b249a) | Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Check7f1222a9-b548-401f-acb9-a5438ddab772) | Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Check6536764c-4201-4762-b527-11433fd35b3e" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Galaxy-J3_OR_DHCP_host-name_CONTAINS_SM-J327T1_OR_DHCP_host-name_CONTAINS_SM-J327T_OR_DHCP_host-name_CONTAINS_SM-J320A_OR_DHCP_host-name_CONTAINS_SM-J320V_OR_DHCP_host-name_CONTAINS_SM-J327V_OR_DHCP_host-name_CONTAINS_SM-J320V_OR_DHCP_host-name_CONTAINS_SM-S327VL_OR_DHCP_host-name_CONTAINS_SM-J320P" expression="(((((((Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7eCheck9c8b51ec-40de-4836-b2cc-150577c421af_copy1 | Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7eChecka8579906-108c-49d2-bd66-bf75581d2d21_copy1) | Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Checkc8f61972-0000-4c5c-94e5-e9d713584e60) | Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Checke89febec-2730-4907-900e-3e8c8eaa9b7e) | Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Check8a1c4b76-33b2-4a12-8d28-f4e6c64c04b8) | Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Checkac1c66a8-b6e3-4b60-af25-fdaa86acd972) | Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Check1b5807c4-d809-431b-8e98-5dc6f7297259) | Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Check30714e0f-e53f-4f4b-a918-8680daf0235f) | Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Checkc6dd3cb5-453b-46e1-81c4-9d0c78e85559" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="device-type" attributeValue="SM-J327T1" description="ACIDEX device-type CONTAINS SM-J327T1" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Checkb91124bb-5f40-4450-bd9f-5ca4ad18874c" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-J327T" description="ACIDEX device-type CONTAINS SM-J327T" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check2ca9e861-9214-494f-bb7d-4b92ee14ce9f" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-J320A" description="ACIDEX device-type CONTAINS SM-J320A" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check9ec016fb-8bde-4d98-9589-7725eaab9be1" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-J320V" description="ACIDEX device-type CONTAINS SM-J320V" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check68b37e41-71ec-48fe-be57-97dcf4f7109a" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-J327V" description="ACIDEX device-type CONTAINS SM-J327V" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check2397f582-bb22-4893-8d7a-c7a2ee315fdb" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-J320V" description="ACIDEX device-type CONTAINS SM-J320V" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Checkaa8839a6-060d-4246-861f-db620c7f5666" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-S327VL" description="ACIDEX device-type CONTAINS SM-S327VL" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check362f5c47-ef91-47ce-9ad1-899ba4231756" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-J320P" description="ACIDEX device-type CONTAINS SM-J320P" name="Samsung-Galaxy-J3Rulef15f0b3d-700a-4d28-8da6-069fe0631162Check56856d2f-feeb-499a-a315-3c96b91515ff" operator="Contains" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="SM-J327T1" description="IP User-Agent CONTAINS SM-J327T1" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169Check2c1661fd-5393-4481-b151-ed20c815399c_copy1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-J327T" description="IP User-Agent CONTAINS SM-J327T" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Checkf429ee6d-6266-48f0-a4ec-d4ed492cfd32" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-J320A" description="IP User-Agent CONTAINS SM-J320A" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Check348db772-ceb7-4c5a-9326-06b622f739d7" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-J320V" description="IP User-Agent CONTAINS SM-J320V" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Checkd8de3af5-9859-4980-9da3-bfb03cc994e9" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-J327V" description="IP User-Agent CONTAINS SM-J327V" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Checkc638dfdd-3413-446c-9f35-907db4263055" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-J320V" description="IP User-Agent CONTAINS SM-J320V" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Check8eb3b899-f4ca-4eb0-931d-ef09731b249a" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-S327VL" description="IP User-Agent CONTAINS SM-S327VL" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Check7f1222a9-b548-401f-acb9-a5438ddab772" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-J320P" description="IP User-Agent CONTAINS SM-J320P" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy1Check6536764c-4201-4762-b527-11433fd35b3e" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Galaxy-J3" description="DHCP host-name CONTAINS Galaxy-J3" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7eCheck9c8b51ec-40de-4836-b2cc-150577c421af_copy1" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-J327T1" description="DHCP host-name CONTAINS SM-J327T1" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7eChecka8579906-108c-49d2-bd66-bf75581d2d21_copy1" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-J327T" description="DHCP host-name CONTAINS SM-J327T" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Checkc8f61972-0000-4c5c-94e5-e9d713584e60" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-J320A" description="DHCP host-name CONTAINS SM-J320A" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Checke89febec-2730-4907-900e-3e8c8eaa9b7e" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-J320V" description="DHCP host-name CONTAINS SM-J320V" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Check8a1c4b76-33b2-4a12-8d28-f4e6c64c04b8" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-J327V" description="DHCP host-name CONTAINS SM-J327V" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Checkac1c66a8-b6e3-4b60-af25-fdaa86acd972" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-J320V" description="DHCP host-name CONTAINS SM-J320V" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Check1b5807c4-d809-431b-8e98-5dc6f7297259" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-S327VL" description="DHCP host-name CONTAINS SM-S327VL" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Check30714e0f-e53f-4f4b-a918-8680daf0235f" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-J320P" description="DHCP host-name CONTAINS SM-J320P" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy1Checkc6dd3cb5-453b-46e1-81c4-9d0c78e85559" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

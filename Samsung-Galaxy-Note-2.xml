@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-Note-2" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="50" name="Samsung-Galaxy-Note-2" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-2-N7108Rule1_copy"/>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-2-N7100Rule1_copy"/>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-2-N7105Rule1_copy"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Note-2Rule84c7c5c2-6145-46cc-963a-07700c29f6b6"/>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-2-N7102Rule1_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-2-N7108-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-2-N7108-Rule1-Check1_copy" name="Android-Samsung-Galaxy-Note-2-N7108Rule1_copy" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-2-N7100-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-2-N7100-Rule1-Check1_copy" name="Android-Samsung-Galaxy-Note-2-N7100Rule1_copy" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-2-N7105-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-2-N7105-Rule1-Check1_copy" name="Android-Samsung-Galaxy-Note-2-N7105Rule1_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_note2_OR_DHCP_host-name_CONTAINS_note-2" expression="Samsung-Galaxy-Note-2Rule84c7c5c2-6145-46cc-963a-07700c29f6b6Checkc4948492-e7dc-4bc8-b361-7d0304fc8d6f | Samsung-Galaxy-Note-2Rule84c7c5c2-6145-46cc-963a-07700c29f6b6Check88d604ee-2ca4-41a5-b658-c7901a5a2c83" name="Samsung-Galaxy-Note-2Rule84c7c5c2-6145-46cc-963a-07700c29f6b6" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-2-N7102-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-2-N7102-Rule1-Check1_copy" name="Android-Samsung-Galaxy-Note-2-N7102Rule1_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="N7108" description="Condition for Android-Samsung-Galaxy-Note-2-N7108 , based on IP-User-Agent" name="Android-Samsung-Galaxy-Note-2-N7108-Rule1-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="N7100" description="Condition for Android-Samsung-Galaxy-Note-2-N7100 , based on IP-User-Agent" name="Android-Samsung-Galaxy-Note-2-N7100-Rule1-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="N7105" description="Condition for Android-Samsung-Galaxy-Note-2-N7105 , based on IP-User-Agent" name="Android-Samsung-Galaxy-Note-2-N7105-Rule1-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="note2" description="DHCP host-name CONTAINS note2" name="Samsung-Galaxy-Note-2Rule84c7c5c2-6145-46cc-963a-07700c29f6b6Checkc4948492-e7dc-4bc8-b361-7d0304fc8d6f" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="note-2" description="DHCP host-name CONTAINS note-2" name="Samsung-Galaxy-Note-2Rule84c7c5c2-6145-46cc-963a-07700c29f6b6Check88d604ee-2ca4-41a5-b658-c7901a5a2c83" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="N7102" description="Condition for Android-Samsung-Galaxy-Note-2-N7102 , based on IP-User-Agent" name="Android-Samsung-Galaxy-Note-2-N7102-Rule1-Check1_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

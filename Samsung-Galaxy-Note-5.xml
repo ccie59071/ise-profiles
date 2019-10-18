@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-Note-5" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="50" name="Samsung-Galaxy-Note-5" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-5Rule1N920_copy"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-5-N920-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-5-N920-Rule1-Check1_copy" name="Android-Samsung-Galaxy-Note-5Rule1N920_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Note5_OR_DHCP_host-name_CONTAINS_Note-5_OR_DHCP_host-name_CONTAINS_SM-N920T_OR_DHCP_host-name_CONTAINS_SM-N920A_OR_DHCP_host-name_CONTAINS_SM-N920P_OR_DHCP_host-name_CONTAINS_SM-N920V" expression="((((Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check130530b4-ed7d-428b-9b59-bbba66ab4996 | Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check5ffb03ea-5d88-4946-af29-5c82320af84e) | Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check78db86e4-ef45-4924-8c2d-35f202d5eb5d) | Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check4d128544-1a2f-4877-bef5-8741fdc2b027) | Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Checkacceeb93-a7c5-4d65-b84b-a6da0d758ee2) | Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check668d6be9-b6fb-496f-a81a-2a38f0a669d9" name="Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51" ruleType="Regular"/>
+<Rule description="ACIDEX_device-type_CONTAINS_SM-N920T_OR_ACIDEX_device-type_CONTAINS_SM-N920A_OR_ACIDEX_device-type_CONTAINS_SM-N920P_OR_ACIDEX_device-type_CONTAINS_SM-N920V" expression="((Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957Check90ce3cfe-046b-49ea-b3cf-34cee8881956 | Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957Check34dc8eb3-65e5-4657-9415-50175a9743b5) | Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957Check62196f88-9dea-4b95-a24b-78dada7cfd9c) | Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957Checkb34b85ad-de4b-4684-9291-d0bfc3e0b687" name="Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_SM-N920T_OR_IP_User-Agent_CONTAINS_SM-N920A_OR_IP_User-Agent_CONTAINS_SM-N920P_OR_IP_User-Agent_CONTAINS_SM-N920V" expression="((Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4Checkfad5471f-5096-4942-b4c6-00c8f6baa63c | Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4Checkf1459ce7-19d7-4377-b134-a9e5484828db) | Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4Check1895bfc6-2b8b-4e89-8a40-69490269798a) | Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4Check24b57ce8-4b6b-4af3-a4a6-a72873fde83e" name="Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="N920" description="Condition for Android-Samsung-Galaxy-Note-5-N920, based on IP:User-Agent" name="Android-Samsung-Galaxy-Note-5-N920-Rule1-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Note5" description="DHCP host-name CONTAINS Note5" name="Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check130530b4-ed7d-428b-9b59-bbba66ab4996" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Note-5" description="DHCP host-name CONTAINS Note-5" name="Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check5ffb03ea-5d88-4946-af29-5c82320af84e" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-N920T" description="DHCP host-name CONTAINS SM-N920T" name="Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check78db86e4-ef45-4924-8c2d-35f202d5eb5d" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-N920A" description="DHCP host-name CONTAINS SM-N920A" name="Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check4d128544-1a2f-4877-bef5-8741fdc2b027" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-N920P" description="DHCP host-name CONTAINS SM-N920P" name="Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Checkacceeb93-a7c5-4d65-b84b-a6da0d758ee2" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-N920V" description="DHCP host-name CONTAINS SM-N920V" name="Samsung-Galaxy-Note-5Rule10300d75-6401-4c85-9810-8d33e2758b51Check668d6be9-b6fb-496f-a81a-2a38f0a669d9" operator="Contains" type="DHCP"/>
+<Check attributeName="device-type" attributeValue="SM-N920T" description="ACIDEX device-type CONTAINS SM-N920T" name="Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957Check90ce3cfe-046b-49ea-b3cf-34cee8881956" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-N920A" description="ACIDEX device-type CONTAINS SM-N920A" name="Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957Check34dc8eb3-65e5-4657-9415-50175a9743b5" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-N920P" description="ACIDEX device-type CONTAINS SM-N920P" name="Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957Check62196f88-9dea-4b95-a24b-78dada7cfd9c" operator="Contains" type="ACIDEX"/>
+<Check attributeName="device-type" attributeValue="SM-N920V" description="ACIDEX device-type CONTAINS SM-N920V" name="Samsung-Galaxy-Note-5Rule05a9d778-7e1e-4bf9-8a90-f17b29588957Checkb34b85ad-de4b-4684-9291-d0bfc3e0b687" operator="Contains" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="SM-N920T" description="IP User-Agent CONTAINS SM-N920T" name="Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4Checkfad5471f-5096-4942-b4c6-00c8f6baa63c" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N920A" description="IP User-Agent CONTAINS SM-N920A" name="Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4Checkf1459ce7-19d7-4377-b134-a9e5484828db" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N920P" description="IP User-Agent CONTAINS SM-N920P" name="Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4Check1895bfc6-2b8b-4e89-8a40-69490269798a" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N920V" description="IP User-Agent CONTAINS SM-N920V" name="Samsung-Galaxy-Note-5Rule17edefb2-02fd-437b-9e99-69c602ad23a4Check24b57ce8-4b6b-4af3-a4a6-a72873fde83e" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

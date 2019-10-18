@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-Pro" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="Samsung-Galaxy-Note-Pro" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-Note-ProRule71223d5d-1772-4c72-819a-4dcc52d8baac"/>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-Note-ProRulec58d182d-c064-4889-b3de-3bb7800a903a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_SM-P900" expression="Samsung-Galaxy-Note-ProRule71223d5d-1772-4c72-819a-4dcc52d8baacCheck61e3bdfa-daf2-4950-be1d-7dc63f6d602c" name="Samsung-Galaxy-Note-ProRule71223d5d-1772-4c72-819a-4dcc52d8baac" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_SM-P900" expression="Samsung-Galaxy-Note-ProRulec58d182d-c064-4889-b3de-3bb7800a903aCheck3ec8246b-e0f5-446e-8f6e-aa3dbebba480" name="Samsung-Galaxy-Note-ProRulec58d182d-c064-4889-b3de-3bb7800a903a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="SM-P900" description="IP User-Agent CONTAINS SM-P900" name="Samsung-Galaxy-Note-ProRule71223d5d-1772-4c72-819a-4dcc52d8baacCheck61e3bdfa-daf2-4950-be1d-7dc63f6d602c" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="SM-P900" description="DHCP host-name CONTAINS SM-P900" name="Samsung-Galaxy-Note-ProRulec58d182d-c064-4889-b3de-3bb7800a903aCheck3ec8246b-e0f5-446e-8f6e-aa3dbebba480" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Samsung-ML-375x" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Samsung-ML-375xRule9553694b-a7e1-40be-b442-13d17d0f0b7b"/>
+<PolicyRule certaintyFactor="20" name="Samsung-ML-375xRulea60a83dd-50f2-4426-8433-abbbd910df25"/>
+<PolicyRule certaintyFactor="30" name="Samsung-ML-375xRule60569b49-c779-4e21-a075-4f26b8761b68"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="SNMP_hrDeviceDescr_CONTAINS_ML-375x" expression="Samsung-ML-375xRule9553694b-a7e1-40be-b442-13d17d0f0b7bCheck91e789d1-9471-48f3-8592-2567d9350162" name="Samsung-ML-375xRule9553694b-a7e1-40be-b442-13d17d0f0b7b" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-class-identifier_CONTAINS_SAMSUNG_Network_Printer" expression="Samsung-ML-375xRulea60a83dd-50f2-4426-8433-abbbd910df25Check68c77643-8b7d-45ac-b527-1cf0f419142f" name="Samsung-ML-375xRulea60a83dd-50f2-4426-8433-abbbd910df25" ruleType="Regular"/>
+<Rule description="SNMP_sysDescr_CONTAINS_ML-375x" expression="Samsung-ML-375xRule60569b49-c779-4e21-a075-4f26b8761b68Checkd92df157-bf9d-44c1-921c-0ea58011aae7" name="Samsung-ML-375xRule60569b49-c779-4e21-a075-4f26b8761b68" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="hrDeviceDescr" attributeValue="ML-375x" description="SNMP hrDeviceDescr CONTAINS ML-375x" name="Samsung-ML-375xRule9553694b-a7e1-40be-b442-13d17d0f0b7bCheck91e789d1-9471-48f3-8592-2567d9350162" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="SAMSUNG Network Printer" description="DHCP dhcp-class-identifier CONTAINS SAMSUNG Network Printer" name="Samsung-ML-375xRulea60a83dd-50f2-4426-8433-abbbd910df25Check68c77643-8b7d-45ac-b527-1cf0f419142f" operator="Contains" type="DHCP"/>
+<Check attributeName="sysDescr" attributeValue="ML-375x" description="SNMP sysDescr CONTAINS ML-375x" name="Samsung-ML-375xRule60569b49-c779-4e21-a075-4f26b8761b68Checkd92df157-bf9d-44c1-921c-0ea58011aae7" operator="Contains" type="Snmp"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

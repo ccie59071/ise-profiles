@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-Note-3" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="50" name="Samsung-Galaxy-Note-3" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-3Rule22_copy"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227"/>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-3Rule33_copy"/>
+<PolicyRule certaintyFactor="50" name="Samsung-Galaxy-Note-3Rule6395e414-c180-444b-9e4b-5d2b80ea046e"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-3-N900V-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-3-N900V-Rule1-Check1_copy" name="Android-Samsung-Galaxy-Note-3Rule22_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_SM-N960F_OR_DHCP_host-name_CONTAINS_SM-N900_OR_DHCP_host-name_CONTAINS_Note-3_OR_DHCP_host-name_CONTAINS_Note3" expression="((Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227Check97e5d602-b708-4daa-8c58-db71a2e9f98e | Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227Checkba13024e-564f-4de4-97d9-3d4a8abb91a6) | Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227Check02266be8-8770-4187-a374-495dd35c942b) | Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227Checkaf68940f-54cd-4fce-b5ec-7f5b75856073" name="Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-3-N900A-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-3-N900A-Rule1-Check1_copy" name="Android-Samsung-Galaxy-Note-3Rule33_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_SM-N960F_OR_IP_User-Agent_CONTAINS_SM-N900" expression="Samsung-Galaxy-Note-3Rule6395e414-c180-444b-9e4b-5d2b80ea046eCheck2bd3f6c2-ad86-487f-8c3d-af41db0e7f34 | Samsung-Galaxy-Note-3Rule6395e414-c180-444b-9e4b-5d2b80ea046eCheck1cdfbcb1-bb66-41d9-97b9-31bc245d4abc" name="Samsung-Galaxy-Note-3Rule6395e414-c180-444b-9e4b-5d2b80ea046e" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="N900V" description="Condition for Android-Samsung-Galaxy-Note-3-N900V based on IP:User-Agent" name="Android-Samsung-Galaxy-Note-3-N900V-Rule1-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="SM-N960F" description="DHCP host-name CONTAINS SM-N960F" name="Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227Check97e5d602-b708-4daa-8c58-db71a2e9f98e" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-N900" description="DHCP host-name CONTAINS SM-N900" name="Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227Checkba13024e-564f-4de4-97d9-3d4a8abb91a6" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Note-3" description="DHCP host-name CONTAINS Note-3" name="Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227Check02266be8-8770-4187-a374-495dd35c942b" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Note3" description="DHCP host-name CONTAINS Note3" name="Samsung-Galaxy-Note-3Rule3a1f9c47-d785-44f8-be1b-da9f9dfb5227Checkaf68940f-54cd-4fce-b5ec-7f5b75856073" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="N900A" description="This is condition for Android-Samsung-Galaxy-Note-3-N900A" name="Android-Samsung-Galaxy-Note-3-N900A-Rule1-Check1_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N960F" description="IP User-Agent CONTAINS SM-N960F" name="Samsung-Galaxy-Note-3Rule6395e414-c180-444b-9e4b-5d2b80ea046eCheck2bd3f6c2-ad86-487f-8c3d-af41db0e7f34" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N900" description="IP User-Agent CONTAINS SM-N900" name="Samsung-Galaxy-Note-3Rule6395e414-c180-444b-9e4b-5d2b80ea046eCheck1cdfbcb1-bb66-41d9-97b9-31bc245d4abc" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>

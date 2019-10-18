@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for Samsung devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Samsung-Device" scanActionName="SNMPPortsAndOS-scan" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="-3" name="Samsung-Device-Rule3_SCAN"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule2"/>
+<PolicyRule certaintyFactor="10" name="Samsung-Device-Rule3"/>
+<PolicyRule certaintyFactor="10" name="Samsung-DeviceRule44"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-Core" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="Samsung-Galaxy-Core" parentFQN="Samsung-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy"/>
+<PolicyRule certaintyFactor="40" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Samsung-Device-SCAN" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3_SCAN" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aa" ruleType="Regular"/>
+<Rule description="Samsung-Device-DEVICEDESCR" expression="Samsung-Device-DEVICEDESCR" name="Samsung-Device-Rule2" ruleType="Regular"/>
+<Rule description="Samsung-Device-OUI" expression="Samsung-Device-OUI" name="Samsung-Device-Rule3" ruleType="Regular"/>
+<Rule description="Samsung-Device-DHCP_OR_Samsung-Device-Rule1-Check1" expression="Samsung-Device-DHCP | Samsung-Device-Rule1-Check1" name="Samsung-DeviceRule44" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_SM-G360V_OR_DHCP_host-name_CONTAINS_SM-G360T1" expression="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7eCheck9c8b51ec-40de-4836-b2cc-150577c421af_copy | Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7eChecka8579906-108c-49d2-bd66-bf75581d2d21_copy" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7e_copy" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_SM-G360T1_OR_IP_User-Agent_CONTAINS_SM-G360V" expression="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169Check2c1661fd-5393-4481-b151-ed20c815399c_copy | Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copyCheck163ab582-0f00-4363-958e-3779f14a8ae5" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Samsung" description="MAC OUI CONTAINS Samsung" name="Samsung-Device-OUI" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Samsung-DeviceRule8d0ff10b-5a28-401a-b3fc-3d300e9e85aaCheck02cfc825-0840-4d40-a5b2-be9e592f0ac7" operator="Contains" type="Mac"/>
+<Check attributeName="hrDeviceDescr" attributeValue="Samsung" description="SNMP hrDeviceDescr CONTAINS Samsung" name="Samsung-Device-DEVICEDESCR" operator="Contains" type="Snmp"/>
+<Check attributeName="dhcp-class-identifier" attributeValue="Samsung" description="DHCP dhcp-class-identifier CONTAINS Samsung" name="Samsung-Device-DHCP" operator="Contains" type="DHCP"/>
+<Check attributeName="dhcpv6-vendor-class" attributeValue="Samsung" description="Condition for Samsung-Device based on DHCP:dhcpv6-vendor-class" name="Samsung-Device-Rule1-Check1" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-G360V" description="DHCP host-name CONTAINS SM-G360V" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7eCheck9c8b51ec-40de-4836-b2cc-150577c421af_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="SM-G360T1" description="DHCP host-name CONTAINS SM-G360T1" name="Samsung-Galaxy-J2Rule9e2f0265-3ba8-4f7c-9b97-ec7316824e7eChecka8579906-108c-49d2-bd66-bf75581d2d21_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="SM-G360T1" description="IP User-Agent CONTAINS SM-G360T1" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169Check2c1661fd-5393-4481-b151-ed20c815399c_copy" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-G360V" description="IP User-Agent CONTAINS SM-G360V" name="Samsung-Galaxy-J2Rulea76d487f-5304-48eb-a53f-8cfd6b549169_copyCheck163ab582-0f00-4363-958e-3779f14a8ae5" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions>
+<ScanAction allPorts="false" description="Perform operating system and SNMP ports detection. Used for 'Unknown' endpoints." name="SNMPPortsAndOS-scan" operatingSystem="true" serviceVersion="false" skipHostDiscovery="false" smbDiscovery="false" snmpPorts="true">
+<CustomPort enable="false"/>
+</ScanAction>
+</ScanActions>
+</CPMProfilerPolicies>
