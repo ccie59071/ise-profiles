@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
 <Policies>
-<Policy description="Policy for Motorola Mobile Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="MotorolaMobile-Device" version="2">
+<Policy description="Policy for Motorola Mobile Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="MotorolaMobile-Device" version="2">
 <PolicyRules>
-<PolicyRule certaintyFactor="20" name="MotorolaMobile-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="MotorolaMobile-DeviceRule1"/>
 </PolicyRules>
 </Policy>
-<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Motorola-Moto" parentFQN="MotorolaMobile-Device" version="2">
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="90" name="Motorola-Moto" parentFQN="MotorolaMobile-Device" version="2">
 <PolicyRules>
-<PolicyRule certaintyFactor="20" name="Motorola-MotoRulea1e3ec3a-1099-439e-8e44-3ef749287c31"/>
+<PolicyRule certaintyFactor="90" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7"/>
 </PolicyRules>
 </Policy>
 </Policies>
 <Rules>
 <Rule description="MotorolaMobile-DeviceRule1Check1" expression="MotorolaMobile-DeviceRule1Check1" name="MotorolaMobile-DeviceRule1" ruleType="Regular"/>
-<Rule description="IP_User-Agent_CONTAINS_moto" expression="Motorola-MotoRulea1e3ec3a-1099-439e-8e44-3ef749287c31Check0994880d-9ac6-43c3-aeac-646a605935f1" name="Motorola-MotoRulea1e3ec3a-1099-439e-8e44-3ef749287c31" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_MotoG3_OR_IP_User-Agent_CONTAINS_Moto_OR_IP_User-Agent_CONTAINS_XT1635-01_OR_IP_User-Agent_CONTAINS_XT1635_OR_IP_User-Agent_CONTAINS_XT1650_OR_IP_User-Agent_CONTAINS_XT1710-02_OR_IP_User-Agent_CONTAINS_XT1710_OR_ACIDEX_device-type_CONTAINS_moto" expression="((((((Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Check44e2599d-b815-4f32-a1e7-388de7f22858 | Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Check9c7ad3a6-1aa7-41c2-85c2-3b9bfde949e9) | Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Check37ed23c0-2929-452a-864b-8f1ebe5144f4) | Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Checkf10d3fe7-5549-4a75-af58-de4d89a56d63) | Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Checke48e02ff-0f62-4b29-95c9-bd850ecd82d6) | Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Checkeac9702c-78e9-4b8f-9f59-d6602d066564) | Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Check18baf15d-a998-4dd1-98b5-07bbb588785c) | Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Checkf74d395e-2ef2-4d4c-b118-fa5ce03c3edb" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7" ruleType="Regular"/>
 </Rules>
 <Checks>
 <Check attributeName="OUI" attributeValue="Motorola Mobility" description="MotorolaMobile-DeviceRule1Check1" name="MotorolaMobile-DeviceRule1Check1" operator="Contains" type="Mac"/>
-<Check attributeName="User-Agent" attributeValue="moto" description="IP User-Agent CONTAINS moto" name="Motorola-MotoRulea1e3ec3a-1099-439e-8e44-3ef749287c31Check0994880d-9ac6-43c3-aeac-646a605935f1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="MotoG3" description="IP User-Agent CONTAINS MotoG3" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Check44e2599d-b815-4f32-a1e7-388de7f22858" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="Moto" description="IP User-Agent CONTAINS Moto" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Check9c7ad3a6-1aa7-41c2-85c2-3b9bfde949e9" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="XT1635-01" description="IP User-Agent CONTAINS XT1635-01" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Check37ed23c0-2929-452a-864b-8f1ebe5144f4" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="XT1635" description="IP User-Agent CONTAINS XT1635" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Checkf10d3fe7-5549-4a75-af58-de4d89a56d63" operator="Contains" type="IP"/>
+<Check attributeName="device-type" attributeValue="moto" description="ACIDEX device-type CONTAINS moto" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Checke48e02ff-0f62-4b29-95c9-bd850ecd82d6" operator="Contains" type="ACIDEX"/>
+<Check attributeName="User-Agent" attributeValue="XT1650" description="IP User-Agent CONTAINS XT1650" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Checkeac9702c-78e9-4b8f-9f59-d6602d066564" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="XT1710-02" description="IP User-Agent CONTAINS XT1710-02" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Check18baf15d-a998-4dd1-98b5-07bbb588785c" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="XT1710" description="IP User-Agent CONTAINS XT1710" name="Motorola-MotoRule8db4669b-21f9-4fc8-a3bc-7a8771c2eaa7Checkf74d395e-2ef2-4d4c-b118-fa5ce03c3edb" operator="Contains" type="IP"/>
 </Checks>
 <Actions/>
 <ScanActions/>

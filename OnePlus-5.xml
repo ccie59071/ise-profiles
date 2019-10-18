@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all OnePlus devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="OnePlus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="OnePlus-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="OnePlus-5" parentFQN="OnePlus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5_copy"/>
+<PolicyRule certaintyFactor="20" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="OnePlus-Device-Rule1-Check1" expression="OnePlus-Device-Rule1-Check1" name="OnePlus-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_OnePlus_5_OR_DHCP_host-name_STARTSWITH_OnePlus_5_OR_DHCP_host-name_STARTSWITH_OnePlus5_OR_DHCP_host-name_CONTAINS_OnePlus5" expression="((Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check531eac21-d8f6-4cfb-8ac2-18a12933097c_copy | Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check865cbf74-1dbb-49cc-bc37-b2156bbe2dc2_copy) | Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check330ca75e-408a-437f-a358-2ea6ac88877a_copy) | Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check38618cfa-a1c0-4ad1-9536-62cfba0fa052_copy" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5_copy" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_oneplus_5_OR_IP_FQDN_STARTSWITH_oneplus_5_OR_IP_FQDN_STARTSWITH_oneplus5_OR_IP_FQDN_CONTAINS_oneplus5" expression="((Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check0e50396f-a051-4691-9f0c-51e099539bb6_copy | Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check8254aa94-5a3a-4982-ae81-06ba25933c77_copy) | Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check44fc33dc-5600-47e3-b915-16f081cfd7fd_copy) | Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check7b81ffce-697a-41dc-b41a-a9a45c09410e_copy" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="OnePlus" description="Condition for OnePlus-Device,based on MAC-OUI" name="OnePlus-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="OnePlus_5" description="DHCP host-name CONTAINS OnePlus_5" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check531eac21-d8f6-4cfb-8ac2-18a12933097c_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="OnePlus_5" description="DHCP host-name STARTSWITH OnePlus_5" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check865cbf74-1dbb-49cc-bc37-b2156bbe2dc2_copy" operator="Starts with" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="OnePlus5" description="DHCP host-name STARTSWITH OnePlus5" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check330ca75e-408a-437f-a358-2ea6ac88877a_copy" operator="Starts with" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="OnePlus5" description="DHCP host-name CONTAINS OnePlus5" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check38618cfa-a1c0-4ad1-9536-62cfba0fa052_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="FQDN" attributeValue="oneplus_5" description="IP FQDN CONTAINS oneplus_5" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check0e50396f-a051-4691-9f0c-51e099539bb6_copy" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="oneplus_5" description="IP FQDN STARTSWITH oneplus_5" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check8254aa94-5a3a-4982-ae81-06ba25933c77_copy" operator="Starts with" type="IP"/>
+<Check attributeName="FQDN" attributeValue="oneplus5" description="IP FQDN STARTSWITH oneplus5" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check44fc33dc-5600-47e3-b915-16f081cfd7fd_copy" operator="Starts with" type="IP"/>
+<Check attributeName="FQDN" attributeValue="oneplus5" description="IP FQDN CONTAINS oneplus5" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check7b81ffce-697a-41dc-b41a-a9a45c09410e_copy" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

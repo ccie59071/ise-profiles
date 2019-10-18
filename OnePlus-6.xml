@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all OnePlus devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="OnePlus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="OnePlus-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="OnePlus-6" parentFQN="OnePlus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32_copy_copy"/>
+<PolicyRule certaintyFactor="20" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="OnePlus-Device-Rule1-Check1" expression="OnePlus-Device-Rule1-Check1" name="OnePlus-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_FQDN_CONTAINS_oneplus_6_OR_IP_FQDN_STARTSWITH_oneplus_6_OR_IP_FQDN_STARTSWITH_oneplus6_OR_IP_FQDN_CONTAINS_oneplus6" expression="((Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check0e50396f-a051-4691-9f0c-51e099539bb6_copy_copy | Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check8254aa94-5a3a-4982-ae81-06ba25933c77_copy_copy) | Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check44fc33dc-5600-47e3-b915-16f081cfd7fd_copy_copy) | Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check7b81ffce-697a-41dc-b41a-a9a45c09410e_copy_copy" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32_copy_copy" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_OnePlus_6_OR_DHCP_host-name_STARTSWITH_OnePlus_6_OR_DHCP_host-name_STARTSWITH_OnePlus6_OR_DHCP_host-name_CONTAINS_OnePlus6" expression="((Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check531eac21-d8f6-4cfb-8ac2-18a12933097c_copy_copy | Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check865cbf74-1dbb-49cc-bc37-b2156bbe2dc2_copy_copy) | Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check330ca75e-408a-437f-a358-2ea6ac88877a_copy_copy) | Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check38618cfa-a1c0-4ad1-9536-62cfba0fa052_copy_copy" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="OnePlus" description="Condition for OnePlus-Device,based on MAC-OUI" name="OnePlus-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="FQDN" attributeValue="oneplus_6" description="IP FQDN CONTAINS oneplus_6" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check0e50396f-a051-4691-9f0c-51e099539bb6_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="FQDN" attributeValue="oneplus_6" description="IP FQDN STARTSWITH oneplus_6" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check8254aa94-5a3a-4982-ae81-06ba25933c77_copy_copy" operator="Starts with" type="IP"/>
+<Check attributeName="FQDN" attributeValue="oneplus6" description="IP FQDN STARTSWITH oneplus6" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check44fc33dc-5600-47e3-b915-16f081cfd7fd_copy_copy" operator="Starts with" type="IP"/>
+<Check attributeName="FQDN" attributeValue="oneplus6" description="IP FQDN CONTAINS oneplus6" name="Oneplus-3Rule6935c717-cb75-4233-a1d4-668ad5194e32Check7b81ffce-697a-41dc-b41a-a9a45c09410e_copy_copy" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="OnePlus_6" description="DHCP host-name CONTAINS OnePlus_6" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check531eac21-d8f6-4cfb-8ac2-18a12933097c_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="OnePlus_6" description="DHCP host-name STARTSWITH OnePlus_6" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check865cbf74-1dbb-49cc-bc37-b2156bbe2dc2_copy_copy" operator="Starts with" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="OnePlus6" description="DHCP host-name STARTSWITH OnePlus6" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check330ca75e-408a-437f-a358-2ea6ac88877a_copy_copy" operator="Starts with" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="OnePlus6" description="DHCP host-name CONTAINS OnePlus6" name="Oneplus-3Rule6b58b222-0fb2-467e-9619-e0d577cb51a5Check38618cfa-a1c0-4ad1-9536-62cfba0fa052_copy_copy" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

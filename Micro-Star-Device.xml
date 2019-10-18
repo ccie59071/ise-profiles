@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Micro-Star-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Micro-Star-DeviceRulee165f192-e08c-4016-8d65-aceac0bf1b42"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Micro-Star" expression="Micro-Star-DeviceRulee165f192-e08c-4016-8d65-aceac0bf1b42Check31bcf669-617d-4997-8db0-3c4184d3e78d" name="Micro-Star-DeviceRulee165f192-e08c-4016-8d65-aceac0bf1b42" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Micro-Star" description="MAC OUI CONTAINS Micro-Star" name="Micro-Star-DeviceRulee165f192-e08c-4016-8d65-aceac0bf1b42Check31bcf669-617d-4997-8db0-3c4184d3e78d" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
