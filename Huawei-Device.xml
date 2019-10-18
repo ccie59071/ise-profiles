@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
 <Policies>
-<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="Huawei-Device" version="2">
+<Policy description="Policy for Huawei-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="Huawei-Device" version="2">
 <PolicyRules>
-<PolicyRule certaintyFactor="40" name="Huawei-DeviceRule1"/>
+<PolicyRule certaintyFactor="20" name="Huawei-DeviceRule1"/>
 </PolicyRules>
 </Policy>
 </Policies>

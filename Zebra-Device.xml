@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Zebra Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="30" name="Zebra-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Zebra-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Zebra-Device-Rule1-Check1" expression="Zebra-Device-Rule1-Check1" name="Zebra-DeviceRule1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Zebra" description="Condition for Zebra-Device , based on MAC-OUI" name="Zebra-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
