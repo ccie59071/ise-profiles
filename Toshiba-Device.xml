@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Toshiba-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Toshiba-DeviceRuled89185d1-1806-4aab-a32b-223d6b6c75aa"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Toshiba" expression="Toshiba-DeviceRuled89185d1-1806-4aab-a32b-223d6b6c75aaCheck27bc9a37-45ed-43d3-805a-a38d26f5db45" name="Toshiba-DeviceRuled89185d1-1806-4aab-a32b-223d6b6c75aa" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Toshiba" description="MAC OUI CONTAINS Toshiba" name="Toshiba-DeviceRuled89185d1-1806-4aab-a32b-223d6b6c75aaCheck27bc9a37-45ed-43d3-805a-a38d26f5db45" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

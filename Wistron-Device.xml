@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Wistron-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Wistron-DeviceRule62de2628-a2eb-4e49-b6f3-4826b75f5bcb"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Wistron" expression="Wistron-DeviceRule62de2628-a2eb-4e49-b6f3-4826b75f5bcbCheck008f5cc3-e048-4c09-9f34-93fe9dc0ad07" name="Wistron-DeviceRule62de2628-a2eb-4e49-b6f3-4826b75f5bcb" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Wistron" description="MAC OUI CONTAINS Wistron" name="Wistron-DeviceRule62de2628-a2eb-4e49-b6f3-4826b75f5bcbCheck008f5cc3-e048-4c09-9f34-93fe9dc0ad07" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
