@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Motorola Mobile Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="MotorolaMobile-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="MotorolaMobile-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MotorolaMobile-DeviceRule1Check1" expression="MotorolaMobile-DeviceRule1Check1" name="MotorolaMobile-DeviceRule1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Motorola Mobility" description="MotorolaMobile-DeviceRule1Check1" name="MotorolaMobile-DeviceRule1Check1" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

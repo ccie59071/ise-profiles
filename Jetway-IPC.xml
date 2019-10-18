@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="40" name="Jetway-IPC" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Jetway-IPCRule5d6f920f-9ba1-4f21-aa43-bd5504747df9"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Jetway_Information" expression="Jetway-IPCRule5d6f920f-9ba1-4f21-aa43-bd5504747df9Check1bd2b526-bb14-4564-9c95-46fdbe5716ee" name="Jetway-IPCRule5d6f920f-9ba1-4f21-aa43-bd5504747df9" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Jetway Information" description="MAC OUI CONTAINS Jetway Information" name="Jetway-IPCRule5d6f920f-9ba1-4f21-aa43-bd5504747df9Check1bd2b526-bb14-4564-9c95-46fdbe5716ee" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

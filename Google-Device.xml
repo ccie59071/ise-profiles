@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Google-Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="Google-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Google-DeviceRule2"/>
+<PolicyRule certaintyFactor="10" name="Google-DeviceRule1"/>
+<PolicyRule certaintyFactor="10" name="Google-DeviceRule0b9d36c2-6fcc-4918-bf8e-b39eacfc954d"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Google-Device-Rule2-Check1" expression="Google-Device-Rule2-Check1" name="Google-DeviceRule2" ruleType="Regular"/>
+<Rule description="Google-Device-Rule1-Check1" expression="Google-Device-Rule1-Check1" name="Google-DeviceRule1" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Google" expression="Google-DeviceRule0b9d36c2-6fcc-4918-bf8e-b39eacfc954dCheck72507c71-0e22-4332-8745-a1d91e18c9dd" name="Google-DeviceRule0b9d36c2-6fcc-4918-bf8e-b39eacfc954d" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="CrKey" description="Condition for Google-Device , based on IP-User-Agent" name="Google-Device-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Chromecast" description="Condition for Google-Device , based on DHCP-Host-Name" name="Google-Device-Rule1-Check1" operator="Equals" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Google" description="MAC OUI CONTAINS Google" name="Google-DeviceRule0b9d36c2-6fcc-4918-bf8e-b39eacfc954dCheck72507c71-0e22-4332-8745-a1d91e18c9dd" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

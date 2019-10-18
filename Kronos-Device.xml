@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Kronos-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Kronos-DeviceRuleb15b7b18-eb1c-494c-9d45-9b6e9fb6e88a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Kronos" expression="Kronos-DeviceRuleb15b7b18-eb1c-494c-9d45-9b6e9fb6e88aCheck9cfe759d-f94f-4fa5-82ff-9f41022f3417" name="Kronos-DeviceRuleb15b7b18-eb1c-494c-9d45-9b6e9fb6e88a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Kronos" description="MAC OUI CONTAINS Kronos" name="Kronos-DeviceRuleb15b7b18-eb1c-494c-9d45-9b6e9fb6e88aCheck9cfe759d-f94f-4fa5-82ff-9f41022f3417" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Generic policy for all OnePlus devices" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="OnePlus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="OnePlus-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="OnePlus-Device-3" parentFQN="OnePlus-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="OnePlus-Device-3Ruled72981ea-8f90-48fb-b638-ce0543726804"/>
+<PolicyRule certaintyFactor="20" name="OnePlus-Device-3Rule894c58d2-5028-4b0a-a77c-ee66a4847f5f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="OnePlus-Device-Rule1-Check1" expression="OnePlus-Device-Rule1-Check1" name="OnePlus-DeviceRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_OnePlus_3" expression="OnePlus-Device-3Ruled72981ea-8f90-48fb-b638-ce0543726804Checkeb3e6675-9dd0-437d-abd1-f3f66bb1d4d1" name="OnePlus-Device-3Ruled72981ea-8f90-48fb-b638-ce0543726804" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_OnePlus3" expression="OnePlus-Device-3Rule894c58d2-5028-4b0a-a77c-ee66a4847f5fCheck6e75e277-fbcb-4ea6-aaf3-c800ea37cb1e" name="OnePlus-Device-3Rule894c58d2-5028-4b0a-a77c-ee66a4847f5f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="OnePlus" description="Condition for OnePlus-Device,based on MAC-OUI" name="OnePlus-Device-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="OnePlus_3" description="DHCP host-name CONTAINS OnePlus_3" name="OnePlus-Device-3Ruled72981ea-8f90-48fb-b638-ce0543726804Checkeb3e6675-9dd0-437d-abd1-f3f66bb1d4d1" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="OnePlus3" description="DHCP host-name CONTAINS OnePlus3" name="OnePlus-Device-3Rule894c58d2-5028-4b0a-a77c-ee66a4847f5fCheck6e75e277-fbcb-4ea6-aaf3-c800ea37cb1e" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

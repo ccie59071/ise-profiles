@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Xiaomi-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Xiaomi-DeviceRule33cdf9b4-7d82-4426-9ef7-21233998e740"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_Xiaomi_Communications" expression="Xiaomi-DeviceRule33cdf9b4-7d82-4426-9ef7-21233998e740Checkf956e3c9-2ccc-4a3b-b6eb-5ddad027a777" name="Xiaomi-DeviceRule33cdf9b4-7d82-4426-9ef7-21233998e740" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Xiaomi Communications" description="MAC OUI CONTAINS Xiaomi Communications" name="Xiaomi-DeviceRule33cdf9b4-7d82-4426-9ef7-21233998e740Checkf956e3c9-2ccc-4a3b-b6eb-5ddad027a777" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

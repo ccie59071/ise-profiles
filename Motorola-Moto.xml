@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Motorola Mobile Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="20" name="MotorolaMobile-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="MotorolaMobile-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Motorola-Moto" parentFQN="MotorolaMobile-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Motorola-MotoRulea1e3ec3a-1099-439e-8e44-3ef749287c31"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MotorolaMobile-DeviceRule1Check1" expression="MotorolaMobile-DeviceRule1Check1" name="MotorolaMobile-DeviceRule1" ruleType="Regular"/>
+<Rule description="IP_User-Agent_CONTAINS_moto" expression="Motorola-MotoRulea1e3ec3a-1099-439e-8e44-3ef749287c31Check0994880d-9ac6-43c3-aeac-646a605935f1" name="Motorola-MotoRulea1e3ec3a-1099-439e-8e44-3ef749287c31" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Motorola Mobility" description="MotorolaMobile-DeviceRule1Check1" name="MotorolaMobile-DeviceRule1Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="moto" description="IP User-Agent CONTAINS moto" name="Motorola-MotoRulea1e3ec3a-1099-439e-8e44-3ef749287c31Check0994880d-9ac6-43c3-aeac-646a605935f1" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

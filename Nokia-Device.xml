@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Nokia Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="70" name="Nokia-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="70" name="Nokia-DeviceRule68684ac1-be06-49c7-a5df-988ae9ce3045"/>
+<PolicyRule certaintyFactor="70" name="Nokia-OUI-Rule"/>
+<PolicyRule certaintyFactor="70" name="Nokia-User-Agent-Rule"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_HMD_Global" expression="Nokia-DeviceRule68684ac1-be06-49c7-a5df-988ae9ce3045Checkb02994c9-6ce3-4e19-b0f1-858295f2acbc" name="Nokia-DeviceRule68684ac1-be06-49c7-a5df-988ae9ce3045" ruleType="Regular"/>
+<Rule description="Nokia-OUI-Rule" expression="Nokia-OUI-Check" name="Nokia-OUI-Rule" ruleType="Regular"/>
+<Rule description="Nokia-User-Agent-Rule" expression="Nokia-User-Agent-Check" name="Nokia-User-Agent-Rule" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="HMD Global" description="MAC OUI CONTAINS HMD Global" name="Nokia-DeviceRule68684ac1-be06-49c7-a5df-988ae9ce3045Checkb02994c9-6ce3-4e19-b0f1-858295f2acbc" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="NOKIA" description="Nokia-OUI-Check" name="Nokia-OUI-Check" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="NOKIA" description="Nokia-User-Agent-Check" name="Nokia-User-Agent-Check" operator="Contains" type="IP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

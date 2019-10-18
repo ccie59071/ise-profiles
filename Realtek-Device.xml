@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Realtek-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Realtek-DeviceRule0a9c8c3b-cc01-47a4-8c22-3d7b665645af"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_REALTEK_SEMICONDUCTOR" expression="Realtek-DeviceRule0a9c8c3b-cc01-47a4-8c22-3d7b665645afCheck52e3e227-9b42-45e6-9e21-05434f0bf649" name="Realtek-DeviceRule0a9c8c3b-cc01-47a4-8c22-3d7b665645af" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="REALTEK SEMICONDUCTOR" description="MAC OUI CONTAINS REALTEK SEMICONDUCTOR" name="Realtek-DeviceRule0a9c8c3b-cc01-47a4-8c22-3d7b665645afCheck52e3e227-9b42-45e6-9e21-05434f0bf649" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

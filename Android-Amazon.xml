@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for all Android SmartPhones" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="AndroidRule33"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule2"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android Amazon" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="50" name="Android-Amazon" parentFQN="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Android-AmazonTVRule1"/>
+<PolicyRule certaintyFactor="50" name="Android-AmazonPhoneRule1"/>
+<PolicyRule certaintyFactor="50" name="Android-AmazonRuleb8dcb1ce-7700-4b86-ab79-2ef11f53b79c"/>
+<PolicyRule certaintyFactor="50" name="Android-AmazonRule3a6537c5-ad0f-410b-9da7-62d3664b9b9b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Android-Rule2-Check1" expression="Android-Rule2-Check1" name="AndroidRule33" ruleType="Regular"/>
+<Rule description="AndroidRule1Check2" expression="AndroidRule1Check2" name="AndroidRule2" ruleType="Regular"/>
+<Rule description="AndroidRule1Check1" expression="AndroidRule1Check1" name="AndroidRule1" ruleType="Regular"/>
+<Rule description="Android-Amazon-TV-Rule1-Check1" expression="Android-Amazon-TV-Rule1-Check1" name="Android-AmazonTVRule1" ruleType="Regular"/>
+<Rule description="Android-Amazon-Phone-Rule1-Check1" expression="Android-Amazon-Phone-Rule1-Check1" name="Android-AmazonPhoneRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_&quot;amazon-&quot;" expression="Android-AmazonRuleb8dcb1ce-7700-4b86-ab79-2ef11f53b79cChecke0a9fabc-b187-4c27-9a44-e876bb758eea" name="Android-AmazonRuleb8dcb1ce-7700-4b86-ab79-2ef11f53b79c" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Amazon_Technologies" expression="Android-AmazonRule3a6537c5-ad0f-410b-9da7-62d3664b9b9bCheck15d5f4e1-3c3f-4519-bce6-3b4b41a9b037" name="Android-AmazonRule3a6537c5-ad0f-410b-9da7-62d3664b9b9b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="device-platform" attributeValue="android" description="Condition for Android based on ACIDEX:device-platform" name="Android-Rule2-Check1" operator="Equals" type="ACIDEX"/>
+<Check attributeName="host-name" attributeValue="android" description="AndroidRule1Check2" name="AndroidRule1Check2" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Android" description="AndroidRule1Check1" name="AndroidRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="AFT" description="Condition for Android-Amazon-TV, based on IP User-Agent" name="Android-Amazon-TV-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SD49" description="Condition for Android-Amazon-Phone, based on IP User-Agent" name="Android-Amazon-Phone-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="&quot;amazon-&quot;" description="DHCP host-name CONTAINS &quot;amazon-&quot;" name="Android-AmazonRuleb8dcb1ce-7700-4b86-ab79-2ef11f53b79cChecke0a9fabc-b187-4c27-9a44-e876bb758eea" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Amazon Technologies" description="MAC OUI CONTAINS Amazon Technologies" name="Android-AmazonRule3a6537c5-ad0f-410b-9da7-62d3664b9b9bCheck15d5f4e1-3c3f-4519-bce6-3b4b41a9b037" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

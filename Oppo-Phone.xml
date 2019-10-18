@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for all Android SmartPhones" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="AndroidRule33"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule2"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Oppo-Phone" parentFQN="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Oppo-PhoneRule4a841ba6-b6e0-429e-bf7d-b3b203198463"/>
+<PolicyRule certaintyFactor="20" name="Oppo-PhoneRuleccce97c1-e603-455c-bb4b-fc45eb92bd4a"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Android-Rule2-Check1" expression="Android-Rule2-Check1" name="AndroidRule33" ruleType="Regular"/>
+<Rule description="AndroidRule1Check2" expression="AndroidRule1Check2" name="AndroidRule2" ruleType="Regular"/>
+<Rule description="AndroidRule1Check1" expression="AndroidRule1Check1" name="AndroidRule1" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_GUANGDONG_OPPO" expression="Oppo-PhoneRule4a841ba6-b6e0-429e-bf7d-b3b203198463Check2f46bb01-83f3-42a4-a3cc-ba0d39ab38cc" name="Oppo-PhoneRule4a841ba6-b6e0-429e-bf7d-b3b203198463" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_oppo" expression="Oppo-PhoneRuleccce97c1-e603-455c-bb4b-fc45eb92bd4aCheck59f368a5-b98d-41eb-998c-964f761dd4c0" name="Oppo-PhoneRuleccce97c1-e603-455c-bb4b-fc45eb92bd4a" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="device-platform" attributeValue="android" description="Condition for Android based on ACIDEX:device-platform" name="Android-Rule2-Check1" operator="Equals" type="ACIDEX"/>
+<Check attributeName="host-name" attributeValue="android" description="AndroidRule1Check2" name="AndroidRule1Check2" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Android" description="AndroidRule1Check1" name="AndroidRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="OUI" attributeValue="GUANGDONG OPPO" description="MAC OUI CONTAINS GUANGDONG OPPO" name="Oppo-PhoneRule4a841ba6-b6e0-429e-bf7d-b3b203198463Check2f46bb01-83f3-42a4-a3cc-ba0d39ab38cc" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="oppo" description="DHCP host-name CONTAINS oppo" name="Oppo-PhoneRuleccce97c1-e603-455c-bb4b-fc45eb92bd4aCheck59f368a5-b98d-41eb-998c-964f761dd4c0" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

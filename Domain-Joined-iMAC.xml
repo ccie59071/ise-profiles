@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for all Apple MacBooks" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Apple-MacBookRule1_copy0"/>
+<PolicyRule certaintyFactor="40" name="Apple-Mac-OS-XRuled762ca32-eb67-4f65-b9e0-70c39def1ec8"/>
+<PolicyRule certaintyFactor="40" name="Apple-MacBookRule3_copy0"/>
+<PolicyRule certaintyFactor="30" name="Apple-Mac-OS-XRulef8df86c2-86d4-47e0-9a54-a6df7a9a8aff"/>
+<PolicyRule certaintyFactor="40" name="Apple-MacBookRule2_copy0"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for all Apple iMacs" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="Apple-iMAC" parentFQN="Apple-Mac-OS-X" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Apple-MacBookRule357d2b5e-8d3b-4147-a860-1154d51bd973_copy_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Domain-Joined-iMAC" parentFQN="Apple-Mac-OS-X:Apple-iMAC" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="Domain-Joined-iMACRule3bbd90b7-361c-46eb-a2de-157849cd4a44"/>
+<PolicyRule certaintyFactor="20" name="Domain-Joined-iMACRule4c0d513f-f82d-419e-a41f-782dc62b7597"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Apple-MacBookRuleCheck1" expression="Apple-MacBookRuleCheck1_copy0" name="Apple-MacBookRule1_copy0" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_121,_3,_6,_15,_119,_252,_95,_44,_46" expression="Apple-Mac-OS-XRuled762ca32-eb67-4f65-b9e0-70c39def1ec8Checkce83388c-660d-4125-98b8-a86845576a01" name="Apple-Mac-OS-XRuled762ca32-eb67-4f65-b9e0-70c39def1ec8" ruleType="Regular"/>
+<Rule description="Apple-MacbookRuleCheck3" expression="Apple-MacbookRuleCheck3_copy0" name="Apple-MacBookRule3_copy0" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Apple" expression="Apple-Mac-OS-XRulef8df86c2-86d4-47e0-9a54-a6df7a9a8affChecked10d6da-e2d3-4ec5-92bc-1498eade933b" name="Apple-Mac-OS-XRulef8df86c2-86d4-47e0-9a54-a6df7a9a8aff" ruleType="Regular"/>
+<Rule description="Apple-MacBookRuleCheck2" expression="Apple-MacBookRuleCheck2_copy0" name="Apple-MacBookRule2_copy0" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_imac" expression="Apple-MacBookRule357d2b5e-8d3b-4147-a860-1154d51bd973Checkcb4ee476-accd-43b7-a792-04d6adf7ce68_copy_copy" name="Apple-MacBookRule357d2b5e-8d3b-4147-a860-1154d51bd973_copy_copy" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Host-Exists_CONTAINS_true" expression="Domain-Joined-iMACRule3bbd90b7-361c-46eb-a2de-157849cd4a44Check1129945c-077c-4b08-aaf3-d1c3df30768b" name="Domain-Joined-iMACRule3bbd90b7-361c-46eb-a2de-157849cd4a44" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Operating-System_CONTAINS_Mac_OS" expression="Domain-Joined-iMACRule4c0d513f-f82d-419e-a41f-782dc62b7597Checka615dff9-3b7d-45a9-b0d3-017514cc084a" name="Domain-Joined-iMACRule4c0d513f-f82d-419e-a41f-782dc62b7597" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="User-Agent" attributeValue="Macintosh" description="Apple-MacBookRuleCheck1" name="Apple-MacBookRuleCheck1_copy0" operator="Contains" type="IP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 121, 3, 6, 15, 119, 252, 95, 44, 46" description="DHCP dhcp-parameter-request-list EQUALS 1, 121, 3, 6, 15, 119, 252, 95, 44, 46" name="Apple-Mac-OS-XRuled762ca32-eb67-4f65-b9e0-70c39def1ec8Checkce83388c-660d-4125-98b8-a86845576a01" operator="Equals" type="DHCP"/>
+<Check attributeName="operating-system" attributeValue="Apple Mac OS X" description="Apple-MacBookRuleCheck3" name="Apple-MacbookRuleCheck3_copy0" operator="Contains" type="NMAP"/>
+<Check attributeName="OUI" attributeValue="Apple" description="MAC OUI CONTAINS Apple" name="Apple-Mac-OS-XRulef8df86c2-86d4-47e0-9a54-a6df7a9a8affChecked10d6da-e2d3-4ec5-92bc-1498eade933b" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="Mac OS" description="Apple-MacBookRuleCheck2" name="Apple-MacBookRuleCheck2_copy0" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="imac" description="DHCP host-name CONTAINS imac" name="Apple-MacBookRule357d2b5e-8d3b-4147-a860-1154d51bd973Checkcb4ee476-accd-43b7-a792-04d6adf7ce68_copy_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="AD-Host-Exists" attributeValue="true" description="ACTIVEDIRECTORY_PROBE AD-Host-Exists CONTAINS true" name="Domain-Joined-iMACRule3bbd90b7-361c-46eb-a2de-157849cd4a44Check1129945c-077c-4b08-aaf3-d1c3df30768b" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="AD-Operating-System" attributeValue="Mac OS" description="ACTIVEDIRECTORY_PROBE AD-Operating-System CONTAINS Mac OS" name="Domain-Joined-iMACRule4c0d513f-f82d-419e-a41f-782dc62b7597Checka615dff9-3b7d-45a9-b0d3-017514cc084a" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

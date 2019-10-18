@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for all Android SmartPhones" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="30" name="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="30" name="AndroidRule33"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule2"/>
+<PolicyRule certaintyFactor="30" name="AndroidRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="Android-Samsung" parentFQN="Android" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-NoteRule1"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-PhoneRule6"/>
+<PolicyRule certaintyFactor="40" name="Android-SamsungRule1"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-PhoneRule7"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-PhoneRule4"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-PhoneRule5"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-PhoneRule2"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-PhoneRule3"/>
+<PolicyRule certaintyFactor="40" name="Android-SamsungRule22"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-PhoneRule1"/>
+<PolicyRule certaintyFactor="40" name="Android-SamsungRule03087a74-87f9-417a-941c-b76c725a5016"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-TabletRule1"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-Note" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="40" name="Android-Samsung-Galaxy-Note" parentFQN="Android:Android-Samsung" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-NoteRuleeca68f97-ac7c-4f36-9780-ad331191b27c"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-NoteRule11"/>
+<PolicyRule certaintyFactor="40" name="Android-Samsung-Galaxy-NoteRule22"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Android-Samsung-Galaxy-Note-2" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="50" name="Android-Samsung-Galaxy-Note-8" parentFQN="Android:Android-Samsung:Android-Samsung-Galaxy-Note" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-8Ruleb8b47b7b-0286-4153-b859-3daa595c3dbc"/>
+<PolicyRule certaintyFactor="50" name="Android-Samsung-Galaxy-Note-8Ruled6c1b91a-6fc8-40a7-8d30-aa25cb0ca3b2"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Android-Rule2-Check1" expression="Android-Rule2-Check1" name="AndroidRule33" ruleType="Regular"/>
+<Rule description="AndroidRule1Check2" expression="AndroidRule1Check2" name="AndroidRule2" ruleType="Regular"/>
+<Rule description="AndroidRule1Check1" expression="AndroidRule1Check1" name="AndroidRule1" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-Rule1-Check1" name="Android-Samsung-Galaxy-NoteRule1" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Phone-Rule6-Check1" expression="Android-Samsung-Galaxy-Phone-Rule6-Check1" name="Android-Samsung-Galaxy-PhoneRule6" ruleType="Regular"/>
+<Rule description="Android-Samsung-Rule1-Check1" expression="Android-Samsung-Rule1-Check1" name="Android-SamsungRule1" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Phone-Rule7-Check1" expression="Android-Samsung-Galaxy-Phone-Rule7-Check1" name="Android-Samsung-Galaxy-PhoneRule7" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Phone-Rule4-Check1" expression="Android-Samsung-Galaxy-Phone-Rule4-Check1" name="Android-Samsung-Galaxy-PhoneRule4" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Phone-Rule5-Check1" expression="Android-Samsung-Galaxy-Phone-Rule5-Check1" name="Android-Samsung-Galaxy-PhoneRule5" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Phone-Rule2-Check1" expression="Android-Samsung-Galaxy-Phone-Rule2-Check1" name="Android-Samsung-Galaxy-PhoneRule2" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Phone-Rule3-Check1" expression="Android-Samsung-Galaxy-Phone-Rule3-Check1" name="Android-Samsung-Galaxy-PhoneRule3" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-Rule2-Check1" expression="Android-Samsung-Galaxy-Note-Rule2-Check1" name="Android-SamsungRule22" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Phone-Rule1-Check1" expression="Android-Samsung-Galaxy-Phone-Rule1-Check1" name="Android-Samsung-Galaxy-PhoneRule1" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Murata_Manufacturing" expression="Android-SamsungRule03087a74-87f9-417a-941c-b76c725a5016Check1f9ea411-fc19-448b-bc87-354e18e6a0f6" name="Android-SamsungRule03087a74-87f9-417a-941c-b76c725a5016" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Tablet-Rule1-Check1" expression="Android-Samsung-Galaxy-Tablet-Rule1-Check1" name="Android-Samsung-Galaxy-TabletRule1" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Note" expression="Android-Samsung-Galaxy-NoteRuleeca68f97-ac7c-4f36-9780-ad331191b27cCheck9f96cb37-8b10-4e71-bfd7-72c375f853b3" name="Android-Samsung-Galaxy-NoteRuleeca68f97-ac7c-4f36-9780-ad331191b27c" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-Rule1-Check1" expression="Android-Samsung-Galaxy-Note-Rule1-Check1" name="Android-Samsung-Galaxy-NoteRule11" ruleType="Regular"/>
+<Rule description="Android-Samsung-Galaxy-Note-Rule2-Check1" expression="Android-Samsung-Galaxy-Note-Rule2-Check1" name="Android-Samsung-Galaxy-NoteRule22" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Note-8" expression="Android-Samsung-Galaxy-Note-8Ruleb8b47b7b-0286-4153-b859-3daa595c3dbcCheck27a408b8-bad7-45b9-b841-f4a2070d2682" name="Android-Samsung-Galaxy-Note-8Ruleb8b47b7b-0286-4153-b859-3daa595c3dbc" ruleType="Regular"/>
+<Rule description="DHCP_host-name_CONTAINS_Note8" expression="Android-Samsung-Galaxy-Note-8Ruled6c1b91a-6fc8-40a7-8d30-aa25cb0ca3b2Check1f25b3b0-d3d8-4a71-988d-96a160fc7cfd" name="Android-Samsung-Galaxy-Note-8Ruled6c1b91a-6fc8-40a7-8d30-aa25cb0ca3b2" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="device-platform" attributeValue="android" description="Condition for Android based on ACIDEX:device-platform" name="Android-Rule2-Check1" operator="Equals" type="ACIDEX"/>
+<Check attributeName="host-name" attributeValue="android" description="AndroidRule1Check2" name="AndroidRule1Check2" operator="Contains" type="DHCP"/>
+<Check attributeName="User-Agent" attributeValue="Android" description="AndroidRule1Check1" name="AndroidRule1Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="GT-N" description="User-Agent CONTAINS GT-N" name="Android-Samsung-Galaxy-Note-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SPH-D" description="User-Agent CONTAINS SPH-D" name="Android-Samsung-Galaxy-Phone-Rule6-Check1" operator="Contains" type="IP"/>
+<Check attributeName="OUI" attributeValue="Samsung" description="OUI CONTAINS Samsung" name="Android-Samsung-Rule1-Check1" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="SM-G" description="User-Agent CONTAINS SM-G" name="Android-Samsung-Galaxy-Phone-Rule7-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="GT-I" description="User-Agent CONTAINS GT-I" name="Android-Samsung-Galaxy-Phone-Rule4-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SGH-T" description="User-Agent CONTAINS SGH-T" name="Android-Samsung-Galaxy-Phone-Rule5-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SGH-I" description="User-Agent CONTAINS SGH-I" name="Android-Samsung-Galaxy-Phone-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="GT-S" description="User-Agent CONTAINS GT-S" name="Android-Samsung-Galaxy-Phone-Rule3-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SM-N" description="Condition for Android-Samsung-Galaxy-Note based on IP:User-Agent" name="Android-Samsung-Galaxy-Note-Rule2-Check1" operator="Contains" type="IP"/>
+<Check attributeName="User-Agent" attributeValue="SCH-I" description="User-Agent CONTAINS SCH-I" name="Android-Samsung-Galaxy-Phone-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="OUI" attributeValue="Murata Manufacturing" description="MAC OUI CONTAINS Murata Manufacturing" name="Android-SamsungRule03087a74-87f9-417a-941c-b76c725a5016Check1f9ea411-fc19-448b-bc87-354e18e6a0f6" operator="Contains" type="Mac"/>
+<Check attributeName="User-Agent" attributeValue="GT-P" description="User-Agent CONTAINS GT-P" name="Android-Samsung-Galaxy-Tablet-Rule1-Check1" operator="Contains" type="IP"/>
+<Check attributeName="host-name" attributeValue="Note" description="DHCP host-name CONTAINS Note" name="Android-Samsung-Galaxy-NoteRuleeca68f97-ac7c-4f36-9780-ad331191b27cCheck9f96cb37-8b10-4e71-bfd7-72c375f853b3" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Note-8" description="DHCP host-name CONTAINS Note-8" name="Android-Samsung-Galaxy-Note-8Ruleb8b47b7b-0286-4153-b859-3daa595c3dbcCheck27a408b8-bad7-45b9-b841-f4a2070d2682" operator="Contains" type="DHCP"/>
+<Check attributeName="host-name" attributeValue="Note8" description="DHCP host-name CONTAINS Note8" name="Android-Samsung-Galaxy-Note-8Ruled6c1b91a-6fc8-40a7-8d30-aa25cb0ca3b2Check1f25b3b0-d3d8-4a71-988d-96a160fc7cfd" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
