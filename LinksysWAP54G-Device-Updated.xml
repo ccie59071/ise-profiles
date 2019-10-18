@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Policy for Linksys Device" isEnabled="true" matchingIdentityGroup="false" minimumCertaintyMetric="5" name="Linksys-Device-Updated" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Linksys-DeviceRule1_copy"/>
+<PolicyRule certaintyFactor="5" name="Linksys-Device-OUI-Rule2_copy"/>
+</PolicyRules>
+</Policy>
+<Policy description="Policy for Linksys WAP54G Device" isEnabled="false" matchingIdentityGroup="false" minimumCertaintyMetric="10" name="LinksysWAP54G-Device-Updated" parentFQN="Linksys-Device-Updated" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="LinksysWAP54G-DeviceRule1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Linksys-DeviceRule1Check1" expression="Linksys-DeviceRule1Check1_copy" name="Linksys-DeviceRule1_copy" ruleType="Regular"/>
+<Rule description="LinksysOUICheck" expression="LinksysOUICheck_copy" name="Linksys-Device-OUI-Rule2_copy" ruleType="Regular"/>
+<Rule description="LinksysWAP54G-DeviceRule1Check1" expression="LinksysWAP54G-DeviceRule1Check1" name="LinksysWAP54G-DeviceRule1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="host-name" attributeValue="Linksys" description="Linksys-DeviceRule1Check1 " name="Linksys-DeviceRule1Check1_copy" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="Cisco-Linksys" description="Linksys OUI Check" name="LinksysOUICheck_copy" operator="Contains" type="Mac"/>
+<Check attributeName="host-name" attributeValue="Linksys WAP54G" description="LinksysWAP54G-DeviceRule1Check1 " name="LinksysWAP54G-DeviceRule1Check1" operator="Contains" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

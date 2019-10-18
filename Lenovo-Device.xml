@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Lenovo-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Lenovo-DeviceRule797aaf42-9f4b-41d1-9c2c-54272f0caaa0"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_LCFC(HeFei)_OR_MAC_OUI_CONTAINS_Lenovo" expression="Lenovo-DeviceRule797aaf42-9f4b-41d1-9c2c-54272f0caaa0Checkc2dd4fac-8d8f-45b4-b346-b3d0aa3bd877 | Lenovo-DeviceRule797aaf42-9f4b-41d1-9c2c-54272f0caaa0Check59042ca0-4dd8-4581-92a2-eef4785b8eb2" name="Lenovo-DeviceRule797aaf42-9f4b-41d1-9c2c-54272f0caaa0" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="LCFC(HeFei)" description="MAC OUI CONTAINS LCFC(HeFei)" name="Lenovo-DeviceRule797aaf42-9f4b-41d1-9c2c-54272f0caaa0Checkc2dd4fac-8d8f-45b4-b346-b3d0aa3bd877" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Lenovo" description="MAC OUI CONTAINS Lenovo" name="Lenovo-DeviceRule797aaf42-9f4b-41d1-9c2c-54272f0caaa0Check59042ca0-4dd8-4581-92a2-eef4785b8eb2" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="IBASE is a manufacturer of industrial computer, panel PC, motherboard, SBC, embedded systems&#9;https://www.ibase.com.tw/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="IBASE-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="IBASE-DeviceRule6fc68fb3-06ee-4c10-bf33-ab8055c8ae9c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_IBASE" expression="IBASE-DeviceRule6fc68fb3-06ee-4c10-bf33-ab8055c8ae9cCheck99e1631e-e381-4b95-b956-f1802a89c19d" name="IBASE-DeviceRule6fc68fb3-06ee-4c10-bf33-ab8055c8ae9c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="IBASE" description="MAC OUI CONTAINS IBASE" name="IBASE-DeviceRule6fc68fb3-06ee-4c10-bf33-ab8055c8ae9cCheck99e1631e-e381-4b95-b956-f1802a89c19d" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

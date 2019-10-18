@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="IBM-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="IBM-DeviceRule59d7a59b-4816-4fb3-93db-32d8a5f8da3c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_IBM" expression="IBM-DeviceRule59d7a59b-4816-4fb3-93db-32d8a5f8da3cCheck1003fcf3-4454-4476-8289-ba7bbf981091" name="IBM-DeviceRule59d7a59b-4816-4fb3-93db-32d8a5f8da3c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="IBM" description="MAC OUI CONTAINS IBM" name="IBM-DeviceRule59d7a59b-4816-4fb3-93db-32d8a5f8da3cCheck1003fcf3-4454-4476-8289-ba7bbf981091" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
