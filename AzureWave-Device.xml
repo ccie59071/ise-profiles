@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="AzureWave-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="AzureWave-DeviceRuleaf9f4abf-fc1b-4fd4-81cb-c86eb0138842"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_AzureWave_Technology" expression="AzureWave-DeviceRuleaf9f4abf-fc1b-4fd4-81cb-c86eb0138842Check5de48db8-d7a1-4b12-8841-53161b2c992b" name="AzureWave-DeviceRuleaf9f4abf-fc1b-4fd4-81cb-c86eb0138842" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="AzureWave Technology" description="MAC OUI CONTAINS AzureWave Technology" name="AzureWave-DeviceRuleaf9f4abf-fc1b-4fd4-81cb-c86eb0138842Check5de48db8-d7a1-4b12-8841-53161b2c992b" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
