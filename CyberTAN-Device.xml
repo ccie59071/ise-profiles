@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="CyberTAN-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="CyberTAN-DeviceRule3950889e-4841-4181-a172-5e17057684a1"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_CyberTAN_Technology" expression="CyberTAN-DeviceRule3950889e-4841-4181-a172-5e17057684a1Check27b84e20-f7e5-43f4-bbbf-49f1ae2d7b0d" name="CyberTAN-DeviceRule3950889e-4841-4181-a172-5e17057684a1" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="CyberTAN Technology" description="MAC OUI CONTAINS CyberTAN Technology" name="CyberTAN-DeviceRule3950889e-4841-4181-a172-5e17057684a1Check27b84e20-f7e5-43f4-bbbf-49f1ae2d7b0d" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

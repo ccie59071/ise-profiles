@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="5" name="Compal-Electronics" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Compal-ElectronicsRuleaed2f5cc-5dcc-4279-afad-4319740d2259"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_COMPAL_INFORMATION" expression="Compal-ElectronicsRuleaed2f5cc-5dcc-4279-afad-4319740d2259Checkf627f5b7-3205-44d2-9fa2-8db13f58109f" name="Compal-ElectronicsRuleaed2f5cc-5dcc-4279-afad-4319740d2259" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="COMPAL INFORMATION" description="MAC OUI CONTAINS COMPAL INFORMATION" name="Compal-ElectronicsRuleaed2f5cc-5dcc-4279-afad-4319740d2259Checkf627f5b7-3205-44d2-9fa2-8db13f58109f" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
