@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Industrial computer company for embedded boards&#9;https://www.dfi.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="25" name="DFI-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="25" name="DFI-DeviceRuleab5f2878-af36-4ac0-aebc-6cb88c688ff4"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="MAC_OUI_CONTAINS_DFI_Inc" expression="DFI-DeviceRuleab5f2878-af36-4ac0-aebc-6cb88c688ff4Check29cfec39-5292-4b68-b726-ab7c9c9eb6bb" name="DFI-DeviceRuleab5f2878-af36-4ac0-aebc-6cb88c688ff4" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="DFI Inc" description="MAC OUI CONTAINS DFI Inc" name="DFI-DeviceRuleab5f2878-af36-4ac0-aebc-6cb88c688ff4Check29cfec39-5292-4b68-b726-ab7c9c9eb6bb" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

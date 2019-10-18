@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Domain-Joined-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Domain-Joined-WorkstationRuledd01fb4a-3da9-4ecc-879f-97ae9f25c4b0"/>
+</PolicyRules>
+</Policy>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Domain-Joined-Win-7" parentFQN="Domain-Joined-Workstation" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="20" name="Domain-Joined-Windows-10Rule86dad706-8e66-4bc3-955e-5fa349b7a8ff_copy_copy"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Host-Exists_CONTAINS_true" expression="Domain-Joined-WorkstationRuledd01fb4a-3da9-4ecc-879f-97ae9f25c4b0Check8f9fa3f6-22b5-4c57-84b8-75768c7a109d" name="Domain-Joined-WorkstationRuledd01fb4a-3da9-4ecc-879f-97ae9f25c4b0" ruleType="Regular"/>
+<Rule description="ACTIVEDIRECTORY_PROBE_AD-Operating-System_CONTAINS_Windows_7" expression="Domain-Joined-Windows-10Rule86dad706-8e66-4bc3-955e-5fa349b7a8ffCheckbe409107-3ed3-421e-9582-6dba6c1517a4_copy_copy" name="Domain-Joined-Windows-10Rule86dad706-8e66-4bc3-955e-5fa349b7a8ff_copy_copy" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="AD-Host-Exists" attributeValue="true" description="ACTIVEDIRECTORY_PROBE AD-Host-Exists CONTAINS true" name="Domain-Joined-WorkstationRuledd01fb4a-3da9-4ecc-879f-97ae9f25c4b0Check8f9fa3f6-22b5-4c57-84b8-75768c7a109d" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+<Check attributeName="AD-Operating-System" attributeValue="Windows 7" description="ACTIVEDIRECTORY_PROBE AD-Operating-System CONTAINS Windows 7" name="Domain-Joined-Windows-10Rule86dad706-8e66-4bc3-955e-5fa349b7a8ffCheckbe409107-3ed3-421e-9582-6dba6c1517a4_copy_copy" operator="Contains" type="ACTIVEDIRECTORY_PROBE"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
