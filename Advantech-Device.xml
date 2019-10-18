@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Brand in IoT intelligent systems, Industry 4.0, machine automation, embedding computing, embedded systems&#9;https://www.advantech.com/" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="50" name="Advantech-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="5" name="Advantech-DeviceRule98dae05f-9a30-4d27-8b2f-53ee84761930"/>
+<PolicyRule certaintyFactor="50" name="Advantech-DeviceRulee8da4cdd-bedd-4979-8ced-fec6fb2db2a3"/>
+<PolicyRule certaintyFactor="50" name="Advantech-DeviceRule45efb7e8-63f8-4839-a25f-0e2e4d222dbe"/>
+<PolicyRule certaintyFactor="5" name="Advantech-DeviceRuleda486350-c818-48f9-af80-139e1f35b418"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="DHCP_host-name_CONTAINS_CED" expression="Advantech-DeviceRule98dae05f-9a30-4d27-8b2f-53ee84761930Check1969b4e3-1408-4eba-97f4-40deca03a2e0" name="Advantech-DeviceRule98dae05f-9a30-4d27-8b2f-53ee84761930" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_ADVANTECH_CO" expression="Advantech-DeviceRulee8da4cdd-bedd-4979-8ced-fec6fb2db2a3Checka1c5315e-f07e-443a-853d-2c0fb6819984" name="Advantech-DeviceRulee8da4cdd-bedd-4979-8ced-fec6fb2db2a3" ruleType="Regular"/>
+<Rule description="MAC_OUI_CONTAINS_Advantech_Technology" expression="Advantech-DeviceRule45efb7e8-63f8-4839-a25f-0e2e4d222dbeCheckaed6defc-cde4-4456-a118-7019596555dc" name="Advantech-DeviceRule45efb7e8-63f8-4839-a25f-0e2e4d222dbe" ruleType="Regular"/>
+<Rule description="DHCP_dhcp-parameter-request-list_EQUALS_1,_15,_3,_6,_44,_46,_47,_31,_33,_121,_249,_43,_252" expression="Advantech-DeviceRuleda486350-c818-48f9-af80-139e1f35b418Check8e59863f-e607-4bec-ae27-1b3d35ce8559" name="Advantech-DeviceRuleda486350-c818-48f9-af80-139e1f35b418" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="host-name" attributeValue="CED" description="DHCP host-name CONTAINS CED" name="Advantech-DeviceRule98dae05f-9a30-4d27-8b2f-53ee84761930Check1969b4e3-1408-4eba-97f4-40deca03a2e0" operator="Contains" type="DHCP"/>
+<Check attributeName="OUI" attributeValue="ADVANTECH CO" description="MAC OUI CONTAINS ADVANTECH CO" name="Advantech-DeviceRulee8da4cdd-bedd-4979-8ced-fec6fb2db2a3Checka1c5315e-f07e-443a-853d-2c0fb6819984" operator="Contains" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Advantech Technology" description="MAC OUI CONTAINS Advantech Technology" name="Advantech-DeviceRule45efb7e8-63f8-4839-a25f-0e2e4d222dbeCheckaed6defc-cde4-4456-a118-7019596555dc" operator="Contains" type="Mac"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1, 15, 3, 6, 44, 46, 47, 31, 33, 121, 249, 43, 252" description="DHCP dhcp-parameter-request-list EQUALS 1, 15, 3, 6, 44, 46, 47, 31, 33, 121, 249, 43, 252" name="Advantech-DeviceRuleda486350-c818-48f9-af80-139e1f35b418Check8e59863f-e607-4bec-ae27-1b3d35ce8559" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
